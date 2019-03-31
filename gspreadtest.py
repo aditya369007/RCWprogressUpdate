@@ -10,7 +10,7 @@ import requests
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name('RCWmmrProgress-205f01816895.json',scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('RCWmmrProgress.json',scope)
 
 gc = gspread.authorize(credentials)
 # opening the required spreadsheet and its sheet number
@@ -73,7 +73,7 @@ mmrInsane = getMMR(urlInsane)
 mmrRedX = getMMR(urlRedX)
 mmrRex = getMMR(urlRex)
 mmrShadowKnight = getMMR(urlShadowKnight)
-# mmrTuskKnight = getMMR(urlTuskKnight)
+mmrTuskKnight = getMMR(urlTuskKnight)
 
 ######################################################################################################
 
@@ -97,6 +97,6 @@ print("Writing rank badges")
 wksRankBadge.append_row([dateFormat,badge777,badgeAiravata,badgeAndroid,badgeHallucinogen,badgeInsane,badgeRedX,badgeRex,badgeShadowKnight,badgeTuskKnight])
 print("Completed writing Rank Badges")
 print("Writing MMR ")
-wksMMR.append_row([dateFormat,mmr777,mmrAiravata,mmrAndroid,mmrHallucinogen,mmrInsane,mmrRedX,mmrRex,mmrShadowKnight])
+wksMMR.append_row([dateFormat,mmr777,mmrAiravata,mmrAndroid,mmrHallucinogen,mmrInsane,mmrRedX,mmrRex,mmrShadowKnight,mmrTuskKnight)
 
 print("Script Succesfully Run")
