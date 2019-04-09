@@ -1,8 +1,4 @@
-#clientID 562444771822403584
-#token NTYyNDQ0NzcxODIyNDAzNTg0.XKLByA.fMJs0A2sK_3iD0jKKW58ijQ__UU
-#permssions integer 247872
 
-#invite URL https://discordapp.com/oauth2/authorize?client_id=562444771822403584&scope=bot&permissions=247872
 
 import discord
 import os
